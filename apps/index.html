@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZoolVibes apps</title>
+<meta name="description" content="Free Android apps by ZoolVibes: Unlit, to help you quit smoking, and Blue Light, guided meditation.">
+<style>
+  body { margin: 0; background: #f7f8fb; color: #1d2433; font: 17px/1.5 "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 520px; margin: 0 auto; padding: 40px 18px 56px; }
+  h1 { font-weight: 600; font-size: 28px; margin: 0 0 4px; text-align: center; }
+  .sub { text-align: center; margin: 0 0 28px; opacity: .75; }
+  .app { display: flex; gap: 16px; align-items: center; background: #fff; border-radius: 20px; padding: 16px;
+         margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); text-decoration: none; color: inherit; }
+  .app img.icon { width: 76px; height: 76px; border-radius: 18px; flex: none; }
+  .app h2 { font-size: 19px; margin: 0 0 2px; }
+  .app p { margin: 0 0 8px; font-size: 15px; opacity: .8; }
+  .btn { display: inline-block; background: #1a73e8; color: #fff; border-radius: 999px; padding: 6px 16px;
+         font-size: 15px; font-weight: 600; }
+  footer { text-align: center; font-size: 14px; opacity: .65; margin-top: 28px; }
+  footer a { color: inherit; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #05070d; color: #dbe3f5; }
+    .app { background: #111725; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>ZoolVibes</h1>
+  <p class="sub">Free apps for Android</p>
+
+  <a class="app" href="https://play.google.com/store/apps/details?id=com.zool.unlit">
+    <img class="icon" src="unlit.png" alt="Unlit app icon">
+    <div>
+      <h2>Unlit: Quit Smoking</h2>
+      <p>Quit smoking, vaping or pouches with craving SOS, savings and a health timeline.</p>
+      <span class="btn">Get it on Google Play</span>
+    </div>
+  </a>
+
+  <a class="app" href="https://play.google.com/store/apps/details?id=com.zool.bluelight">
+    <img class="icon" src="bluelight.png" alt="Blue Light app icon">
+    <div>
+      <h2>Blue Light: Guided Meditation</h2>
+      <p>Relax as a soft blue light fills you, then radiates out into the universe.</p>
+      <span class="btn">Get it on Google Play</span>
+    </div>
+  </a>
+
+  <footer>
+    <a href="https://play.google.com/store/apps/developer?id=ZoolVibes">All ZoolVibes apps on Google Play</a>
+  </footer>
+</main>
+<script>
+  // Pass ?src=tiktok / ?src=youtube on to Google Play so installs show their source in Play Console.
+  var src = new URLSearchParams(location.search).get('src');
+  if (src && /^[a-z0-9_-]{1,30}$/i.test(src)) {
+    document.querySelectorAll('a.app').forEach(function (a) {
+      a.href += '&utm_source=' + src + '&utm_medium=bio&utm_campaign=zoolvibes_apps';
+    });
+  }
+</script>
+</body>
+</html>
