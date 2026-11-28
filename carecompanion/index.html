@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Care Companion privacy policy</title>
+<style>
+  :root { color-scheme: light dark; --text: #161d1b; --muted: #3b4744; --bg: #f5f7f6; --accent: #2e6b67; }
+  @media (prefers-color-scheme: dark) { :root { --text: #e2e9e6; --muted: #c3ccc9; --bg: #111716; --accent: #93d3ca; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 18px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 1.8rem; line-height: 1.2; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; color: var(--accent); }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Care Companion privacy policy</h1>
+<p class="muted">Last updated 28 November 2026</p>
+
+<p>Care Companion is an app for people living with cancer and their carers. This policy explains what happens to the information you put into it. In short: it stays on your phone, and nobody else, including the app's developer, can see it. If you choose to share with a carer, what you share is encrypted so that only your carer's phone can read it.</p>
+
+<h2>What the app stores</h2>
+<p>Only what you enter: appointments, medicines and the doses you log, treatment days, daily check-ins (how you feel and any symptoms), care team contacts, notes on where important papers are kept, and your progress in the bereavement guide. This includes health information, which is a special category of personal data under the GDPR.</p>
+
+<h2>Where it is stored</h2>
+<p>On your phone, in the app's private storage. The app only uses the internet for sharing with a carer, and only if you turn it on (see below). There is no account, no sign-up, no analytics, no advertising and no tracking.</p>
+<p>The app's data is excluded from Android's automatic cloud backup.</p>
+
+<h2>What leaves your phone, and only when you choose</h2>
+<ul>
+  <li><strong>PDF summaries.</strong> When you tap "Create and share PDF" or "Print or share", the app makes a PDF and opens your phone's share menu. You choose who receives it.</li>
+  <li><strong>Backups.</strong> When you tap "Back up to a file", the app saves a file where you choose, such as your phone's storage or Google Drive. The file is not encrypted, so keep it private.</li>
+  <li><strong>Sharing with a carer.</strong> If you tap "Share with a carer", your phone makes a secret key and shows it as a code for your carer to scan (or for you to send them). Your phone then sends an encrypted copy of your medicine times (yesterday to a week ahead), whether each dose was taken or skipped, your first name as you typed it and, if you choose, your appointments for the next two months (date, time, title and place). Check-ins, symptoms, notes, contacts and checklists are never included. You can hide medicine names. The copy is encrypted on your phone with AES-256 before it is sent, and only phones with your code can read it. It is stored by Google Firebase (Cloud Firestore), which only ever holds the encrypted copy and cannot read it; nor can the developer. Like any internet service, Google sees the phone's network address when it connects. The copy is replaced each time something changes, deleted when you tap "Stop sharing", and deleted automatically if it isn't updated for 30 days. Your carer's phone keeps the latest copy it has read until they stop following you.</li>
+  <li><strong>Calls and web links.</strong> Tapping a phone number opens your phone's dialler with the number filled in. Tapping a source link opens the page in your web browser. The app does not see what happens next.</li>
+</ul>
+
+<h2>Ratings</h2>
+<p>The app may show Google Play's own rating window once. Google Play handles it; the app is not told what you choose.</p>
+
+<h2>Notifications</h2>
+<p>Reminders are created on your phone. On the lock screen they only say "Medicine reminder" or "Appointment reminder" until the phone is unlocked.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Notifications</strong>: to show medicine and appointment reminders.</li>
+  <li><strong>Alarms and reminders</strong> (optional): so reminders arrive on the minute.</li>
+  <li><strong>Run at startup</strong>: to set reminders again after the phone restarts.</li>
+  <li><strong>Internet</strong>: only for sharing with a carer.</li>
+  <li><strong>Fingerprint or face</strong> (optional): for the app lock. The app never sees your fingerprint, face or PIN; Android checks them.</li>
+</ul>
+
+<h2>Your rights and your data</h2>
+<p>Because your information never leaves your phone unless you send it, and anything shared with a carer is encrypted so that only their phone can read it, the developer cannot read, change or hand over any of it. You are in full control: you can edit or delete anything in the app, and uninstalling the app (or clearing its storage) deletes everything.</p>
+
+<h2>Children</h2>
+<p>The app is not aimed at children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted here with a new date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the app: <a href="mailto:zool2007.kw@gmail.com">zool2007.kw@gmail.com</a></p>
+</main>
+</body>
+</html>
